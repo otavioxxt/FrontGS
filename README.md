@@ -22,11 +22,13 @@ Github: https://github.com/otavioxxt/JavaGlobal.git
 
 
 ## Integrantes
--Otávio Ferreira Barreto Santos RM565960
+-**Otávio Ferreira Barreto Santos RM565960**
 
--Raphael Salomão Chamma RM564765
+-**Raphael Salomão Chamma RM564765**
 
--Samuel Tenório Cavalcanti RM565881
+-**Samuel Tenório Cavalcanti RM565881**
+
+**Menção Honrosa Bruno Martins**
 
 ## Como usar
 
