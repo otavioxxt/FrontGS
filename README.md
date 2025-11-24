@@ -11,11 +11,8 @@ Este diretório foi gerado automaticamente adicionando páginas e componentes ao
 - src/index.css (diretivas Tailwind, se não existia)
 
 ## Links
-1. Extraia este zip e rode:
-```bash
-npm install
-npm run dev
-```
+Vercel: https://frontgs2-9one3401n-tatauxxts-projects.vercel.app
+Github: https://github.com/otavioxxt/JavaGlobal.git
 
 
 ## Integrantes
@@ -24,3 +21,6 @@ npm run dev
 -Raphael Salomão Chamma RM564765
 
 -Samuel Tenório Cavalcanti RM565881
+
+## Como usar
+
