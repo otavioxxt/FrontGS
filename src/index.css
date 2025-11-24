@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* light/dark variables to avoid @apply usage which sometimes breaks with certain Tailwind plugin setups */
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+}
+
+html.light {
+  color-scheme: light;
+  --bg: #ffffff;
+  --text: #0f172a;
+}
+
+html.dark {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --text: #f8fafc;
+  background-color: var(--bg);
+}
+
+/* apply global background and text using CSS variables to avoid using @apply with Tailwind utilities */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+/* small helper for smooth transitions on elements that change color */
+* { transition: background-color 200ms ease, color 200ms ease; }

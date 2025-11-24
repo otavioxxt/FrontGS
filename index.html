@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <div id="root"></div>
+    
+<script>
+// Small error overlay so runtime errors are visible instead of a white screen
+(function(){
+  function showError(msg, url, line, col, error) {
+    try {
+      var el = document.getElementById('debug-error-overlay');
+      if (!el) {
+        el = document.createElement('div');
+        el.id = 'debug-error-overlay';
+        el.style.position = 'fixed';
+        el.style.left = '0';
+        el.style.right = '0';
+        el.style.top = '0';
+        el.style.background = 'rgba(200,50,50,0.95)';
+        el.style.color = 'white';
+        el.style.zIndex = 99999;
+        el.style.padding = '12px';
+        el.style.fontFamily = 'monospace';
+        el.style.whiteSpace = 'pre-wrap';
+        el.style.maxHeight = '40vh';
+        el.style.overflow = 'auto';
+        document.body.appendChild(el);
+      }
+      var text = 'Error: ' + msg + '\n' + (url ? (url + ':' + line + ':' + col + '\n') : '') + (error && error.stack ? error.stack : '');
+      el.textContent = text;
+      console.error(text);
+    } catch(e){
+      console.error('Failed to show overlay', e);
+    }
+  }
+
+  window.addEventListener('error', function(e){ showError(e.message, e.filename, e.lineno, e.colno, e.error); });
+  window.addEventListener('unhandledrejection', function(e){ showError('Unhandled Rejection: ' + (e.reason && e.reason.message ? e.reason.message : JSON.stringify(e.reason)), '', '', '', e.reason); });
+
+  // quick heartbeat element so we know React mounted at least
+  window.__appHeartbeat = function(msg){
+    var hb = document.getElementById('app-heartbeat');
+    if(!hb){
+      hb = document.createElement('div');
+      hb.id = 'app-heartbeat';
+      hb.style.position='fixed';
+      hb.style.right='12px';
+      hb.style.bottom='12px';
+      hb.style.padding='6px 8px';
+      hb.style.background='rgba(0,0,0,0.6)';
+      hb.style.color='white';
+      hb.style.zIndex=99998;
+      hb.style.fontSize='12px';
+      hb.style.borderRadius='6px';
+      document.body.appendChild(hb);
+    }
+    hb.textContent = 'App: ' + msg;
+  };
+})();
+</script>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
