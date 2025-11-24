@@ -28,7 +28,7 @@ Github: https://github.com/otavioxxt/JavaGlobal.git
 
 -**Samuel Tenório Cavalcanti RM565881**
 
-**Menção Honrosa Bruno Martins**
+**(Menção Honrosa Bruno Martins)**
 
 ## Como usar
 
