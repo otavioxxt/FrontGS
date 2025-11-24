@@ -1,4 +1,9 @@
 # Título Psicobit
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
 **Sobre**
 O projeto Psicobit tem como foco principal moldar o mundo da psicologia com o apoio da IA o site desenvolve mais sobre como a inteligência artificial pode demonstrar a modernização das práticas de tratamento da saúde mental
 
